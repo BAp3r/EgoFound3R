@@ -1,0 +1,7 @@
+torch>=2.3
+torchvision>=0.18
+numpy>=1.24
+opencv-python
+scipy
+Pillow
+tomli; python_version < "3.11"

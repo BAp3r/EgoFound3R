@@ -1,0 +1,39 @@
+[project]
+default_name = "egofound3r"
+seed = 0
+
+[marker_model]
+temporal_architecture_id = "egofound3r_multirate"
+dino_dim = 1024
+aggregator_dim = 2048
+prompt_dim = 768
+hand_feature_dim = 768
+detection_hidden_dim = 256
+num_markers = 195
+marker_query_count = 195
+prompt_injection_layer = 18
+adapter_num_layers = 6
+adapter_num_heads = 12
+adapter_mlp_ratio = 4
+temporal_prompt_layers = 2
+temporal_prompt_heads = 12
+temporal_prompt_mlp_ratio = 4
+root_head_num_layers = 1
+joint_head_num_layers = 5
+vertex_head_num_layers = 5
+enable_vertex_face_residual = true
+vertex_face_residual_layers = [0, 2]
+vertex_face_residual_gate_init = 0.2
+vertex_face_residual_strength = 0.5
+hand_head_num_heads = 12
+hand_head_mlp_ratio = 4
+in_view_hidden_dim = 256
+keypoint_peak_threshold = 0.5
+
+[marker_runtime]
+image_height = 512
+image_width = 512
+vggt_checkpoint_path = ""
+depth_confidence_max_value = 64.0
+metric_scale_min_value = 0.01
+metric_scale_max_value = 100.0
